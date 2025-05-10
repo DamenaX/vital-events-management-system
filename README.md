@@ -38,7 +38,6 @@ This project is a **web-based information management system** designed for the *
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: PHP  
 - **Database**: MySQL  
-- **Server**: WAMP Stack
 
 ## Use Case Overview
 
@@ -57,16 +56,10 @@ The system supports a wide range of functions for multiple actors:
 - Enhances **data-driven decision-making** for government agencies
 - Provides legal evidence for citizenship, court cases, and public services
 
-## Screenshots
-
-![Home Page](screenshots/home.png)  
-![Registrar Page](screenshots/registrar.png)  
-![Event Form](screenshots/event_form.png)
-
-## Getting Started
+## If you want to test
 
 1. Clone the repository
-2. Set up WAMP and import the MySQL database
+2. Set up WAMP/XAMP and import the MySQL database
 3. Place the PHP files in the `htdocs` directory
 4. Access via `localhost/your_project`
 
