@@ -1,0 +1,218 @@
+        <html lang="en">
+
+            <head>
+                <title>Deathcert 2</title>
+                <style>
+                    #container-wrap:before {
+                        content: ' ';
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        margin: auto;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.1;
+                        background-image: url('http://localhost/vms/image/noise.png');
+                        background-repeat: no-repeat;
+                        background-position: 50% 0;
+                        background-size: cover;
+                        overflow: hidden;
+                    }
+
+                    #container {
+                        height: 550px;
+                        width: 800px;
+                        margin: auto;
+                        padding: 10px;
+                        border: 18px solid #0077b6;
+                        position: relative;
+                        background: #90a95584;
+                    }
+
+                    #top {
+                        height: 30%;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    #top>div:nth-child(1) {
+                        height: 40%;
+                        /* border: 2px solid green; */
+                        display: flex;
+                        flex-direction: row;
+
+                    }
+
+                    #flag {
+                        width: 55%;
+                    }
+
+                    #flag img {
+                        height: 100%;
+                        margin-left: 70%;
+                    }
+
+                    #regnumbers {
+                        width: 45%;
+                    }
+
+                    #regnumbers p {
+                        font-size: 60%;
+                        font-family: roboto;
+                        font-weight: bold;
+                        margin-left: 10%;
+                    }
+
+                    #top>div:nth-of-type(2) {
+                        width: 100%;
+                        height: 70%;
+                    }
+
+                    #toptext p {
+                        font-weight: bolder;
+                        font-family: roboto;
+                        text-align: center;
+                    }
+
+                    #fields {
+                        height: 70%;
+                        width: 100%;
+                    }
+
+                    #fields div {
+                        transform: scale(0.85) translateX(-60px);
+                    }
+
+                    .rows {
+                        font-size: 18px;
+                        max-width: 100%;
+                        padding: 10px 10px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .rows:nth-of-type(3) {
+                        justify-content: flex-start;
+                    }
+
+                    .rows:nth-of-type(4) > span,
+                    .rows:nth-of-type(3) span {
+                        margin-right: 10px;
+                    }
+
+                    .rows:nth-of-type(4) span:nth-of-type(3) {
+                        margin-right: 30px;
+                    }
+
+                    .rows:last-of-type {
+                        justify-content: space-between;
+                    }
+
+                    .field {
+                        white-space: nowrap;
+                    }
+
+                    #ethiopia {
+                        width: 40%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                    }
+
+                    #ethiopia img {
+                        height: 90%;
+
+                        /* height: 25%; */
+                    }
+
+                    #oromia {
+                        width: 60%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                    }
+
+                    #oromia img {
+                        height: 90%;
+                        margin-left: 20px;
+
+                    }
+
+                    #oromia p {
+                        font-size: 90%;
+                    }
+
+                    .value {
+                        text-decoration: underline;
+                        text-transform: uppercase;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <div id="container">
+                    <div id="top">
+                        <div>
+                            <div id="ethiopia">
+                                <img src="http://localhost/vms/image/ethiopia.png">
+                            </div>
+                            <div id="oromia">
+                                <p>Lakk adda galme du'aa: <span class="value">_____________________</span></p>
+                                <img src="http://localhost/vms/image/oromia.png">
+                            </div>
+                        </div>
+                        <div id="toptext">
+                            <p>Federal Democratic Republic of Ethiopia Vital Event Registration</p>
+                            <p>Waraqaa Ragaa Du'aa</p>
+                        </div>
+                    </div>
+                    <div id="fields">
+                        <div class="rows">
+                            <span class="field">Maqaa Nama Du'ee: <span class="value">Genet</span></span>
+                            <span class="field">Maqaa Abbaa: <span class="value">Assefa</span></span>
+                            <span class="field">Maqaa Akaakayyuu: <span class="value">_____________</span></span>
+                        </div>
+                        <div class="rows">
+                            <span class="field">hojii: <span class="value">Pharmacist</span></span>
+                            <span class="field">koorniyaa: <span class="value">Female</span></span>
+                            <span class="field">Ji'a Guyyaa Dhaloota: <span class="value">January</span></span>
+                            <span class="field">Guyyaa: <span class="value">01</span></span>
+                            <span class="field">Waggaa: <span class="value">1970</span></span>
+                        </div>
+                        <div class="rows">
+                            <span class="field">Lammummaa: <span class="value">Ethiopia</span></span>
+                            <span class="field">Bakka Du'aa: <span class="value">Harari Woreda 5 Harar</span></span>
+                        </div>
+                        <div class="rows">
+                            <span class="field">Ji'a Guyyaa Du'aa: <span class="value">January</span></span>
+                            <span class="field">Guyyaa: <span class="value">01</span></span>
+                            <span class="field">Waggaa: <span class="value">1970</span></span>
+                            <span class="field">Ji'a Galmee Du'aa:<span class="value">_______</span></span>
+                            <span class="field">Guyyaa: <span class="value">_____</span></span>
+                            <span class="field">Waggaa: <span class="value">_____</span></span>
+                        </div>
+                        <div class="rows">
+                            <span class="field">Guyyaa Waraqaa Ragaa Kenname Ji'a: <span class="value">_____</span></span>
+                            <span class="field">Guyyaa: <span class="value">_____</span></span>
+                            <span class="field">Waggaa: <span class="value">______</span></span>
+                        </div>
+                        <div class="rows">
+                            <span class="field">Maqaa Guutuu Qondala Galmee
+                                Kabajaa:_____________________________________________</span>
+                        </div>
+                        <div class="rows">
+                            <span class="field">Mallatoo:</span>
+                            <!-- <span class="field">chaappaa</span> -->
+                        </div>
+                    </div>
+                    <div id="container-wrap"> </div>
+                </div>
+            </body>
+
+        </html>

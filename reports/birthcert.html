@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container-wrap:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: url('http://localhost/vms/image/noise.png');
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+        }
+
+        #container {
+            background: #90a95584;
+            position: relative;
+            margin: auto;
+            /* width: 100vw; */
+            width: 60%;
+            height: 90vh;
+            border: 18px solid #0077b6;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #top {
+            width: 100%;
+            height: 40%;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #constText {
+            width: 100%;
+            /* border: 3px solid pink; */
+        }
+
+        #constText p {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: roboto;
+            text-align: center;
+            width: 70%;
+            margin: 10px auto;
+        }
+
+        #flags {
+            width: 100%;
+            height: 40%;
+            /* border: 10px solid blue; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        #flags p {
+            font-size: 14px;
+        }
+
+        #oromia {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+
+        #oromia img {
+            height: 60%;
+            margin-left: 20px;
+
+        }
+
+        #ethiopia {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        #ethiopia img {
+            height: 60%;
+
+            /* height: 25%; */
+        }
+
+        #middle {
+            width: 100%;
+            height: 38%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        #middle div,
+        #below div,
+        #bottom div {
+            width: 100%;
+        }
+
+        #below {
+            width: 100%;
+            height: 10%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        #bottom {
+            width: 100%;
+            height: 10%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        .field {
+            padding: 5px;
+        }
+
+        .value {
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-wrap"> </div>
+            <!-- <img class="bg" src="image/noise.png"> -->
+
+            <div id="top">
+                <div id="flags">
+                    <div id="ethiopia">
+                        <img src="http://localhost/vms/image/ethiopia.png">
+                    </div>
+                    <div id="oromia">
+                        <p>Lakk adda galme dhaloota: <span class="value">___________________</span></p>
+                        <img src="http://localhost/vms/image/oromia.png">
+                    </div>
+                </div>
+                <div id="constText">
+                    <p>Mootummaa Fedaraalawaa Dimokiraatawaa Rippaablika Itoophiyaatti Ejensii GalmeessaRagaa Bu'uraa
+                        Hawaasummaa Oromiyaa</p>
+                    <p>Waraqaa Ragaa Dhalootaa</p>
+                </div>
+            </div>
+            <div id="middle">
+                <div id="first">
+                    <div class="field">Maqaa Daa'imaa: <span class="value">meselu</span></div>
+                    <div class="field">Koorniyaa: <span class="value">male</span></div>
+                    <div class="field">Iddoo Dhalootaa: <span class="value">m/m</span></div>
+                    <div class="field">Maqaa Guutuu Haadhaa: <span class="value">aster mamo</span></div>
+                    <div class="field">Maqaa Guutuu Abbaa: <span class="value">alebachew</span></div>
+                </div>
+                <div id="second">
+                    <div class="field">Maqaa Abbaa: <span class="value">alebachew</span></div>
+                    <div class="field">Guyyaa Dhalootaa Ji'a: <span class="value">January</span></div>
+                </div>
+                <div id="third">
+                    <div class="field">Maqaa Akaakayuu: <span class="value">_______________</span></div>
+                    <div class="field double"><span>Guyya: <span class="value">01</span></span> <span>Bara: <span
+                                class="value">1970</span></span></div>
+                    <div class="field">Lammummaa: <span class="value">Ethiopian</span></div>
+                    <div class="field">Lammummaa Haadhaa: <span class="value">____________</span></div>
+                    <div class="field">Lammummaa Abbaa: <span class="value">____________</span></div>
+                </div>
+            </div>
+            <div id="below">
+                <div class="field">Dhalootichi Kan Galmeeffame: <span class="value">2013-05-18</span></div>
+                <div class="field">Guyyaa Waraqaa Ragaan Kenname: <span class="value">___________________</span></div>
+            </div>
+            <div id="bottom">
+                <div class="field">Maqaa Gutuu Qondaala Galme Kabajaa: <span class="value">_____________________</span></div>
+                <div class="field">Mallatto: <span class="value"></span></div>
+            </div>
+
+        
+    </div>
+</body>
+
+</html>

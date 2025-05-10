@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Birthcert 2</title>
+    <style>
+        #container-wrap:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: url('image/noise.png');
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #container {
+            height: 500px;
+            width: 700px;
+            margin: auto;
+            padding: 10px;
+            border: 18px solid #0077b6;
+            position: relative; 
+        }
+
+        #top {
+            height: 30%;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #top>div:nth-child(1) {
+            width: 100%;
+            height: 40%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        #flag {
+            width: 55%;
+        }
+
+        #flag img {
+            height: 100%;
+            margin-left: 70%;
+        }
+
+        #regnumbers {
+            width: 45%;
+        }
+
+        #regnumbers p {
+            font-size: 60%;
+            font-family: roboto;
+            font-weight: bold;
+            margin-left: 10%;
+        }
+
+        #top>div:nth-of-type(2) {
+            width: 100%;
+            height: 70%;
+        }
+
+        #toptext p {
+            font-weight: bolder;
+            font-family: roboto;
+            text-align: center;
+        }
+
+        #fields {
+            height: 70%;
+            width: 100%;
+        }
+
+        #fields div {
+            transform: scale(0.8) translateX(-60px);
+        }
+
+        .rows {
+            width: 100%;
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .field {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top">
+            <div>
+                <div id="flag">
+                    <img src="image/ethiopia.png">
+                </div>
+                <div id="regnumbers">
+                    <p>Birth Register Form Number_________________________________</p>
+                    <p>Birth Registration Unique Identification No.________________________</p>
+                </div>
+            </div>
+            <div id="toptext">
+                <p>Federal Democratic Republic of Ethiopia Vital Event Registration</p>
+                <p>Birth Certificate</p>
+            </div>
+        </div>
+        <div id="fields">
+            <div class="rows">
+                <span class="field">Name:_________________</span>
+                <span class="field">Father's Name:____________________</span>
+                <span class="field">Grand Father's Name:___________________</span>
+            </div>
+            <div class="rows">
+                <span class="field">Sex:_______</span>
+                <span class="field">Date of Birth Month:_______</span>
+                <span class="field">Date:_________</span>
+                <span class="field">Year:__________</span>
+            </div>
+            <div class="rows">
+                <span class="field">Country of Birth:___________</span>
+                <span class="field">City:_________________________</span>
+                <span class="field">Zone:_________________________</span>
+            </div>
+            <div class="rows">
+                <span class="field">Mother's fullname:_________________________</span>
+                <span class="field">Mother's Nationality:______________________</span>
+            </div>
+            <div class="rows">
+                <span class="field">Father's fullname:__________________________</span>
+                <span class="field">Father's Nationality:_________________________</span>
+            </div>
+            <div class="rows">
+                <span class="field">Date of birth Registratioin:______________</span>
+                <span class="field">Date of Certificate Issued:______________</span>
+            </div>
+            <div class="rows">
+                <span class="field">Name of Civil Registrar:_______________________</span>
+            </div>
+            <div class="rows">
+                <span class="field">Signature:</span>
+                <span class="field">Seal:</span>
+            </div>
+        </div>
+        <div id="container-wrap"> </div>
+    </div>
+</body>
+
+</html>
