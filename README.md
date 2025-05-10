@@ -28,7 +28,7 @@ This project is a **web-based information management system** designed for the *
   - Update data (court order required)
   - Secure and accurate data handling
 
-- 🛡 **Security & Data Integrity**
+- 🛡 **Security**
   - Login authentication with session timeout
   - Role-specific access
   - Input validation to avoid incomplete or duplicate entries
@@ -39,20 +39,6 @@ This project is a **web-based information management system** designed for the *
 - **Backend**: PHP  
 - **Database**: MySQL  
 - **Server**: WAMP Stack
-
-## System Requirements
-
-### Hardware
-- CPU: 2.20GHz or higher  
-- RAM: 8GB  
-- Storage: 424GB or more
-
-### Software
-- WAMP Server
-- Mozilla Firefox
-- Windows 7 or later
-- EdrawMax, Visio (for diagramming)
-- Notepad++ (for development)
 
 ## Use Case Overview
 
@@ -77,17 +63,10 @@ The system supports a wide range of functions for multiple actors:
 ![Registrar Page](screenshots/registrar.png)  
 ![Event Form](screenshots/event_form.png)
 
-## Deployment Diagram
-
-![Deployment Diagram](diagrams/deployment.png)
-
 ## Getting Started
 
 1. Clone the repository
 2. Set up WAMP and import the MySQL database
-3. Place the PHP files in the `www` directory
+3. Place the PHP files in the `htdocs` directory
 4. Access via `localhost/your_project`
 
-## License
-
-This project is for academic and government-use purposes only.
